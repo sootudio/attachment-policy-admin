@@ -12,7 +12,8 @@ public enum ErrorCode {
 
     // 커스텀 확장자
     CUSTOM_EXTENSION_DUPLICATED(HttpStatus.CONFLICT, "CUSTOM_EXTENSION_DUPLICATED", "해당 커스텀 확장자가 이미 있습니다."),
-    CUSTOM_EXTENSION_LIMIT_EXCEEDED(HttpStatus.BAD_REQUEST, "CUSTOM_EXTENSION_LIMIT_EXCEEDED", "커스텀 확장자는 최대 200개까지만 추가할 수 있습니다.");
+    CUSTOM_EXTENSION_LIMIT_EXCEEDED(HttpStatus.BAD_REQUEST, "CUSTOM_EXTENSION_LIMIT_EXCEEDED", "커스텀 확장자는 최대 200개까지만 추가할 수 있습니다."),
+    CUSTOM_EXTENSION_NOT_FOUND(HttpStatus.NOT_FOUND, "CUSTOM_EXTENSION_NOT_FOUND", "해당 커스텀 확장자가 없습니다.");
 
     private final HttpStatus status;
     private final String code;
