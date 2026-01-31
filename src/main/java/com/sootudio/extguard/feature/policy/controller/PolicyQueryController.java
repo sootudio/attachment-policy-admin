@@ -1,6 +1,8 @@
 package com.sootudio.extguard.feature.policy.controller;
 
+import com.sootudio.extguard.feature.policy.controller.dto.response.CustomExtensionResponse;
 import com.sootudio.extguard.feature.policy.controller.dto.response.FixedExtensionResponse;
+import com.sootudio.extguard.feature.policy.service.CustomExtensionQueryService;
 import com.sootudio.extguard.feature.policy.service.FixedExtensionQueryService;
 import com.sootudio.extguard.global.response.ApiResponse;
 import lombok.RequiredArgsConstructor;
@@ -14,10 +16,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/policy")
 public class PolicyQueryController {
-    private final FixedExtensionQueryService queryService;
+
+    private final FixedExtensionQueryService fixedQueryService;
+    private final CustomExtensionQueryService customQueryService;
 
     @GetMapping("/fixed-extensions")
     public ApiResponse<List<FixedExtensionResponse>> getFixedExtensions() {
-        return ApiResponse.ok(queryService.findAll());
+        return ApiResponse.ok(fixedQueryService.findAll());
+    }
+
+    @GetMapping("/custom-extensions")
+    public ApiResponse<List<CustomExtensionResponse>> getCustomExtensions() {
+        return ApiResponse.ok(customQueryService.findAll());
     }
 }
