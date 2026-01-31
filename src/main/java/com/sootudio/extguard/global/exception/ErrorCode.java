@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 public enum ErrorCode {
     // 공통
     INVALID_REQUEST(HttpStatus.BAD_REQUEST, "INVALID_REQUEST", "invalid request"),
-    INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", "internal server error"),
+    INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", "internal server error");
 
     private final HttpStatus status;
     private final String code;
