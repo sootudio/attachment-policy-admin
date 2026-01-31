@@ -5,7 +5,10 @@ import org.springframework.http.HttpStatus;
 public enum ErrorCode {
     // 공통
     INVALID_REQUEST(HttpStatus.BAD_REQUEST, "INVALID_REQUEST", "invalid request"),
-    INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", "internal server error");
+    INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", "internal server error"),
+
+    // 고정 확장자
+    FIXED_EXTENSION_NOT_FOUND(HttpStatus.NOT_FOUND, "FIXED_EXTENSION_NOT_FOUND", "fixed extension not found");
 
     private final HttpStatus status;
     private final String code;
