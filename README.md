@@ -237,13 +237,30 @@ flowchart TB
 
 ## 실행 화면
 
-[이미지 자리] 메인 화면(고정 확장자/커스텀 보드)
+### 메인 화면(고정 확장자/커스텀 보드)
 
-[이미지 자리] 고정 확장자 체크/해제 동작
+<img width="950" height="561" alt="image" src="https://github.com/user-attachments/assets/a0e35078-b8c3-4c41-b19a-41248dc543c9" />
 
-[이미지 자리] 커스텀 확장자 추가/삭제 및 n/200 카운트
+### 고정 확장자 체크/해제 동작
 
-[이미지 자리] 에러 메시지 노출 예시(코드 숨김, message만 표시)
+<img width="951" height="554" alt="image" src="https://github.com/user-attachments/assets/cc6a955f-74cc-40bc-b850-b59749f2ae58" />
+
+
+### 커스텀 확장자 추가/삭제 및 n/200 카운트
+
+- 추가 시
+
+<img width="937" height="557" alt="image" src="https://github.com/user-attachments/assets/89f0ef2c-6025-41ec-9714-5f4163b826cc" />
+
+- 삭제 시
+
+<img width="952" height="560" alt="image" src="https://github.com/user-attachments/assets/79b3a1dd-1eb7-419f-bcf0-3944877f13c3" />
+
+
+### 에러 메시지 노출 예시
+
+<img width="947" height="559" alt="image" src="https://github.com/user-attachments/assets/1ab86271-c611-4d8c-8f97-1ac5ca62743d" />
+
 
 ## API 명세
 
