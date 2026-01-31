@@ -40,6 +40,13 @@ public class CustomExtensionCommandService {
         }
     }
 
+    public void delete(Long id) {
+        CustomExtension ext = repo.findById(id)
+                .orElseThrow(() -> new ApiException(ErrorCode.CUSTOM_EXTENSION_NOT_FOUND));
+
+        repo.delete(ext);
+    }
+
     // 확장자에 . 있는지 2차 검증
     private String normalize(String raw) {
         String s = raw == null ? "" : raw.trim().toLowerCase();
