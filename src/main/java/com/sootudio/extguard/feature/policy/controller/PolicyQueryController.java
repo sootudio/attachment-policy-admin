@@ -20,11 +20,13 @@ public class PolicyQueryController {
     private final FixedExtensionQueryService fixedQueryService;
     private final CustomExtensionQueryService customQueryService;
 
+    // 고정 확장자 조회
     @GetMapping("/fixed-extensions")
     public ApiResponse<List<FixedExtensionResponse>> getFixedExtensions() {
         return ApiResponse.ok(fixedQueryService.findAll());
     }
 
+    // 커스텀 확장자 조회
     @GetMapping("/custom-extensions")
     public ApiResponse<List<CustomExtensionResponse>> getCustomExtensions() {
         return ApiResponse.ok(customQueryService.findAll());
