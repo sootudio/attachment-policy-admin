@@ -36,4 +36,11 @@ public class PolicyCommandController {
         CustomExtensionResponse created = customCommandService.create(request.extension());
         return ApiResponse.created(created);
     }
+
+    // 커스텀 확장자 삭제
+    @DeleteMapping("/custom-extensions/{id}")
+    public ApiResponse<Void> deleteCustomExtension(@PathVariable Long id) {
+        customCommandService.delete(id);
+        return ApiResponse.ok();
+    }
 }
